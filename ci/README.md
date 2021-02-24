@@ -43,8 +43,8 @@ Make sure you have `$GITHUB_TOKEN` set and [hub](https://github.com/github/hub) 
 9. Update the AUR package.
    - Instructions on updating the AUR package are at [cdr/code-server-aur](https://github.com/cdr/code-server-aur).
 10. Wait for the npm package to be published.
-11. Update the homebrew package.
-    - Send a pull request to [homebrew-core](https://github.com/Homebrew/homebrew-core) with the URL in the [formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/code-server.rb) updated.
+11. Update the [homebrew package](https://github.com/Homebrew/homebrew-core/blob/master/Formula/code-server.rb).
+    1. If you're on macOS and have homebrew locally, run `brew bump-formula-pr --version=3.8.1 code-server` and update the version accordingly. This will bump the version and open a PR. Note: this will only work once the version is published on npm.
 
 ## Updating Code Coverage in README
 
